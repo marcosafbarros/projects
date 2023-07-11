@@ -12,9 +12,7 @@
         -🔧 Ferramentas: Git, GitHub, Visual Studio Code, Postman
 
 	Projetos Destacados
-
-        -Esense Care -Software para casa de repouso com sistema ILPI :  plataforma para gestão integrada de dados de pacientes e profissionais para CASAS DE REPOUSO E HOME CARE.
-			-ruby on rails, javascript, HTML, CSS
+		em desenvolvimento
 
 	Como entrar em contato
         -✉️ E-mail: marcos.aferreira97@gmail.com
