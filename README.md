@@ -1,26 +1,13 @@
-	Olá! Sou o @marcosafbarros, Atualemente um desenvolvedor júnior com experiência em front-end e QA. Este é o meu perfil do GitHub, onde compartilho meus projetos e aprendizados.
+<img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=800000&height=120&section=header"/>
+  
+[![Typing SVG](https://readme-typing-svg.herokuapp.com/?color=800000&size=35&center=true&vCenter=true&width=1000&lines=HELLO,+MY+NAME+is+Marcos+Ferreira;Be+Welcome!+:%29)](https://git.io/typing-svg)
 
-        Sobre mim
-        - 💼 Tenho experiência em desenvolvimento front-end e back-end usando linguagem Ruby. 
-        -🌱 Atualmente, estou aprendendo javascript para fortalecer ainda mais minhas habilidades em front-end e futuramente em back-end.
-        - 👀 Estou interessado em projetos que envolvam criação de interfaces e desenvolvimento web responsivo.
-        - 💞️ Estou procurando colaborar em projetos que me permitam expandir meus conhecimentos e trabalhar em equipe.
+<div align="center">  
+  <img width="49%" height="195px" src="https://github-readme-stats.vercel.app/api?username=marcosafbarros&show_icons=true&count_private=true&hide_border=true&title_color=800000&icon_color=800000&text_color=c9d1d9&bg_color=0d1117" alt="marcosafbarros github stats" /> 
+  <img width="41%" height="195px" src="https://github-readme-stats.vercel.app/api/top-langs/?username=marcosafbarros&layout=compact&hide_border=true&title_color=800000&text_color=00bfbf&bg_color=0d1117" />
+</div>
 
-	Habilidades
-        -💻 Linguagens de programação: Ruby, JavaScript (conhecimento básico)
-        -🌐 Tecnologias e Frameworks: HTML, CSS, Ruby on Rails, Bootstrap
-        -🔧 Ferramentas: Git, GitHub, Visual Studio Code, Postman
+[![Ashutosh's github activity graph](https://github-readme-activity-graph.vercel.app/graph?username=marcosafbarros&bg_color=000000&color=ffffff&line=a72525&point=dbdbdb&area=true&hide_border=true)](https://github.com/ashutosh00710/github-readme-activity-graph)
 
-	Projetos Destacados
-		em desenvolvimento
 
-	Como entrar em contato
-        -✉️ E-mail: marcos.aferreira97@gmail.com
-        -💼 LinkedIn: [[seu perfil no LinkedIn](link para o perfil)](https://www.linkedin.com/in/marcos-a-ferreira/)
-
-	-Fique à vontade para explorar meus projetos e entrar em contato comigo se tiver interesse em colaborar ou tiver alguma pergunta. Estou sempre aberto a novas oportunidades e aprendizados.
- 	Obrigado por visitar o meu perfil!
-<!---
-marcosafbarros/marcosafbarros is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
+<img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=00bfbf&height=120&section=footer"/>
