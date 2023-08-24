@@ -4,7 +4,7 @@
 
 ## Conecte-se  comigo
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-000?style=for-the-badge&logo=linkedin&logoColor=0E76A8)](https://www.linkedin.com/in/https://www.linkedin.com/in/marcos-a-ferreira//)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-000?style=for-the-badge&logo=linkedin&logoColor=0E76A8)](https://www.linkedin.com/in/marcos-a-ferreira/)
 [![Instagram](https://img.shields.io/badge/Instagram-000?style=for-the-badge&logo=instagram)](https://www.instagram.com/ho_marcoos/)
 
 
@@ -28,4 +28,3 @@
 
 
 <img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=800000&height=120&section=footer"/>
-
