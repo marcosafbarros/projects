@@ -18,7 +18,6 @@
 
 ## Estudando
 ![Java](https://img.shields.io/badge/Java-000?style=for-the-badge&logo=java)
-![Angular](https://img.shields.io/badge/Angular-000?style=for-the-badge&logo=angular&logoColor=C3002F)
 
 ## Gitgub Status
 <div align="center">  
