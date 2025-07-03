@@ -36,8 +36,15 @@
     button {
       width: 30px;
       height: 30px;
-      font-size: 16px;
+      font-size: 18px;
       cursor: pointer;
+    }
+
+    input[type="number"] {
+      width: 50px;
+      text-align: center;
+      font-size: 16px;
+      padding: 3px;
     }
 
     .total {
@@ -82,16 +89,19 @@
       btnMinus.textContent = '−';
       btnMinus.onclick = () => atualizarValor(valor, -1);
 
-      const quantidade = document.createElement('span');
-      quantidade.id = `qtd-${valor}`;
-      quantidade.textContent = '0';
+      const input = document.createElement('input');
+      input.type = 'number';
+      input.min = 0;
+      input.value = 0;
+      input.id = `input-${valor}`;
+      input.oninput = () => setValor(valor, parseInt(input.value) || 0);
 
       const btnPlus = document.createElement('button');
       btnPlus.textContent = '+';
       btnPlus.onclick = () => atualizarValor(valor, 1);
 
       buttons.appendChild(btnMinus);
-      buttons.appendChild(quantidade);
+      buttons.appendChild(input);
       buttons.appendChild(btnPlus);
 
       item.appendChild(label);
@@ -102,7 +112,12 @@
 
     function atualizarValor(valor, delta) {
       quantidades[valor] = Math.max(0, quantidades[valor] + delta);
-      document.getElementById(`qtd-${valor}`).textContent = quantidades[valor];
+      document.getElementById(`input-${valor}`).value = quantidades[valor];
+      calcularTotal();
+    }
+
+    function setValor(valor, novaQtd) {
+      quantidades[valor] = Math.max(0, novaQtd);
       calcularTotal();
     }
 
