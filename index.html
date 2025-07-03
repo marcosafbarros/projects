@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contador de Dinheiro</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background-color: #f4f4f4;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 10px;
+      background: white;
+      padding: 10px;
+      border-radius: 8px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    }
+
+    .buttons {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    button {
+      width: 30px;
+      height: 30px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .total {
+      font-size: 24px;
+      text-align: center;
+      margin-top: 30px;
+      font-weight: bold;
+      color: green;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Contador de Dinheiro</h1>
+
+  <div id="container"></div>
+
+  <div class="total" id="total">Total: R$ 0,00</div>
+
+  <script>
+    const valores = [
+      0.05, 0.10, 0.25, 0.50, 1, 2, 5, 10, 20, 50, 100, 200
+    ];
+
+    const container = document.getElementById('container');
+    const totalDisplay = document.getElementById('total');
+    const quantidades = {};
+
+    valores.forEach(valor => {
+      quantidades[valor] = 0;
+
+      const item = document.createElement('div');
+      item.className = 'item';
+
+      const label = document.createElement('div');
+      label.textContent = `R$ ${valor.toFixed(2).replace('.', ',')}`;
+
+      const buttons = document.createElement('div');
+      buttons.className = 'buttons';
+
+      const btnMinus = document.createElement('button');
+      btnMinus.textContent = '−';
+      btnMinus.onclick = () => atualizarValor(valor, -1);
+
+      const quantidade = document.createElement('span');
+      quantidade.id = `qtd-${valor}`;
+      quantidade.textContent = '0';
+
+      const btnPlus = document.createElement('button');
+      btnPlus.textContent = '+';
+      btnPlus.onclick = () => atualizarValor(valor, 1);
+
+      buttons.appendChild(btnMinus);
+      buttons.appendChild(quantidade);
+      buttons.appendChild(btnPlus);
+
+      item.appendChild(label);
+      item.appendChild(buttons);
+
+      container.appendChild(item);
+    });
+
+    function atualizarValor(valor, delta) {
+      quantidades[valor] = Math.max(0, quantidades[valor] + delta);
+      document.getElementById(`qtd-${valor}`).textContent = quantidades[valor];
+      calcularTotal();
+    }
+
+    function calcularTotal() {
+      let total = 0;
+      for (let valor in quantidades) {
+        total += quantidades[valor] * parseFloat(valor);
+      }
+      totalDisplay.textContent = `Total: R$ ${total.toFixed(2).replace('.', ',')}`;
+    }
+  </script>
+
+</body>
+</html>
